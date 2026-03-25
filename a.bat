@@ -21,7 +21,8 @@ if not exist Z:\ (
     timeout /t 1 >nul
     goto waitloop
 )
-
+timeout /t 2 >nul
+start Z:
 echo.
 set /p choice="firefox? (y/n): "
 
