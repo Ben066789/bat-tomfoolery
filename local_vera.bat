@@ -1,9 +1,5 @@
 @echo off
 
-echo grabbing flash drive letter...
-echo.
-timeout /t 2 >nul
-
 echo starting veracrypt...
 timeout /t 2 >nul
 
