@@ -2,11 +2,17 @@
 
 if "%~1"=="" (
     echo.
-    echo available paths:
+    echo Available paths:
     echo ----------------
     type "%~dp0paths.txt"
     echo.
     echo Usage: c alias
+    echo        c edit
+    exit /b
+)
+
+if /i "%~1"=="edit" (
+    start "" "%~dp0paths.txt"
     exit /b
 )
 
